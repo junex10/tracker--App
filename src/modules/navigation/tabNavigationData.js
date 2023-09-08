@@ -3,6 +3,7 @@ import CalendarScreen from '../calendar/CalendarViewContainer';
 import GridsScreen from '../grids/GridsViewContainer';
 import PagesScreen from '../pages/PagesViewContainer';
 import ComponentsScreen from '../components/ComponentsViewContainer';
+import LoginScreen from '../login/LoginViewContainer';
 
 const iconHome = require('../../../assets/images/tabbar/home.png');
 const iconCalendar = require('../../../assets/images/tabbar/calendar.png');
@@ -11,6 +12,11 @@ const iconPages = require('../../../assets/images/tabbar/pages.png');
 const iconComponents = require('../../../assets/images/tabbar/components.png');
 
 const tabNavigationData = [
+  {
+    name: 'Login',
+    component: LoginScreen,
+    icon: iconHome,
+  },
   {
     name: 'Home',
     component: HomeScreen,

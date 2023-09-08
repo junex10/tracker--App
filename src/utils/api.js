@@ -3,7 +3,7 @@ import Config from 'react-native-config';
 const Api = {
     async fetch(url, body = null, headers = {}, method = 'POST') {
       try {
-        const response = await fetch(url, {
+        const response = await fetch(Config.API + url, {
           method,
           headers: {
             'Content-Type': 'application/json',

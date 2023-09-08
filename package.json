@@ -17,6 +17,7 @@
     "flow": "./node_modules/flow-bin/cli.js",
     "e2e:build": "detox build --configuration ios.sim.debug",
     "e2e:test": "detox test --configuration ios.sim.debug",
+    "clear": "rm -f node_modules/react-native-config/ios/ReactNativeConfig/GeneratedDotEnv.m",
     "build:ios": "react-native bundle --entry-file='index.js' --bundle-output='./ios/main.jsbundle' --dev=false --platform='ios'"
   },
   "dependencies": {
